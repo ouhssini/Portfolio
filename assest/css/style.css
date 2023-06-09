@@ -4,6 +4,8 @@
 :root {
   --main-color: #660766;
   --secondry-color: #b1088c;
+  --text-col: rgb(241, 237, 237);
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -29,4 +31,34 @@ body {
   width: 80%;
   margin: auto;
   min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--text-col);
+  transition: 0.5s;
+}
+.logo {
+  color: var(--text-col);
+  text-transform: capitalize;
+  border-bottom: 6px solid rgb(28, 28, 28);
 }
