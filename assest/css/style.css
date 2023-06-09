@@ -43,6 +43,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 nav ul li {
@@ -78,4 +79,23 @@ nav ul li a {
   color: var(--text-col);
   text-transform: capitalize;
   border-bottom: 6px solid var(--third-color);
+  cursor: pointer;
+}
+
+/* Media Queries */
+/* Define media queries for different screen sizes */
+
+/* Small screens */
+@media (max-width: 767px) {
+  /* Adjust styles for small screens */
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust styles for medium screens */
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  /* Adjust styles for large screens */
 }
