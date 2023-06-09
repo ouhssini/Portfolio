@@ -1,0 +1,32 @@
+/* 
+
+*/
+:root {
+  --main-color: #660766;
+  --secondry-color: #b1088c;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--main-color),
+    var(--secondry-color)
+  );
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+}
