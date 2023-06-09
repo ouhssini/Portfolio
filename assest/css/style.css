@@ -2,6 +2,7 @@
 :root {
   --main-color: #660766;
   --secondry-color: #b1088c;
+  --third-color: rgb(9, 153, 172);
   --text-col: rgb(241, 237, 237);
   font-family: "Poppins", sans-serif;
 }
@@ -46,6 +47,24 @@ nav ul {
 
 nav ul li {
   margin: 0 10px;
+  position: relative;
+}
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background-color: var(--third-color);
+  left: 50%;
+  bottom: -20%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+nav ul li:hover a {
+  color: var(--third-color);
 }
 
 nav ul li a {
@@ -53,10 +72,10 @@ nav ul li a {
   text-transform: capitalize;
   text-decoration: none;
   color: var(--text-col);
-  transition: 0.5s;
+  transition: all 0.5s;
 }
 .logo {
   color: var(--text-col);
   text-transform: capitalize;
-  border-bottom: 6px solid rgb(28, 28, 28);
+  border-bottom: 6px solid var(--third-color);
 }
